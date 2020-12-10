@@ -6,40 +6,32 @@
     </head>
     <body class="page__body">
       <header class="page-header">
-        <div class="main-logo">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="#" width="33" height="37" alt="логотип CAT ENERGY">
+        <div class="logo">
+          <a class="logo--header">
+            <img class="logo__image" src="#" width="34" height="38" alt="логотип CAT ENERGY">
           </a>
-        </div>
-        <div class="second-logo">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="#" width="101" height="18" alt="второй логотип CAT ENERGY">
+          <a class="logo--text">
+            <img class="logo__image-text" src="#" width="101" height="18" alt="CATENERGY">
           </a>
-        </div>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden"> Открыть меню
-            </span>
-          </button>
-          <ul class="main-nav_list site-list">
+            <!-- тут будет крестик для закрытия окна-->
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden"> Открыть меню
+          </span>
+        </button>
+      </div>
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="logo logo--header">
-              <img class="logo__image" src="#" width="128" height="24" alt="второй логотип CAT ENERGY">
-              </a>
-                  <!-- тут будет крестик для закрытия окна-->
-            </li>
-            <li class="site-list__item site-list__item--active">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item">
+            <li class="site-list__item">
               <a href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item site-list__item">
-              <a href="form.html">
+            <li class="site-list__item site-list__item--active">
+              <a>
                 Подбор программы
               </a>
             </li>
@@ -48,7 +40,7 @@
       </header>
         <main>
           <section class="program">
-            <h1 class="program__heading">Подбор программы</h1>
+            <h1 class="program__title">Подбор программы</h1>
             <p class="program__text">Заполните анкету, и мы подберем программу питания для вашего кота
             </p>
             <form class="program__form" method="post" action="#">
@@ -77,7 +69,7 @@
             </fieldset>
           </section>
           <section class="contact">
-            <h2 class="contact__heading">Контактные данные(владельца кота)
+            <h2 class="contact__title">Контактные данные(владельца кота)
             </h2>
             <form class="contact__form" action="#" method="POST">
               <p>
@@ -118,20 +110,16 @@
           <p>* &mdash; Обязательные поля</p>
         </section>
         <section class="cooperation">
-          <div class="cooperation__invitation">
-            <p>Приглашение к сотрудничеству дилеров!</p>
-          </div>
-          <div class="cooperation__adress">
-            <p>ул. Большая Конюшеннаяб д. 19/8 Санкт-Петербург</p>
-          </div>
+          <p class="cooperation__invitation">Приглашение к сотрудничеству дилеров!</p>
+          <address class="cooperation__adress">ул. Большая Конюшеннаяб д. 19/8 Санкт-Петербург</address>
         </section>
         <section class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1606290659375!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
         </main>
-        <footer class="page-footer main">
+        <footer class="page-footer--main">
           <a class="logo logo--footer">
-            <img class="logo__image" src="#" width="128" height="24" alt="второй логотип CAT ENERGY">
+            <img class="logo__image-text" src="#" width="128" height="24" alt="второй логотип CAT ENERGY">
           </a>
           <div class="page-footer__social social">
             <ul class="social__list">
