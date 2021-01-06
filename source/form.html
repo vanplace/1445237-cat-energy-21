@@ -48,15 +48,15 @@
       </section>
       <form class="program__form program-form" method="post" action="#">
         <fieldset class="main-info">
-            <legend class="visualy-hidden">Данные животного</legend>
-            <label class="main-info__label program-form__input-label" for="name">Имя:*</label>
-            <input class="main-info__input program-form__input" id="name" type="text" name="name" placeholder="Барсик">
-            <label class="main-info__label program-form__input-label" for="weight">Вес (кг)*</label>
-            <input class="main-info__input program-form__input" id="weight" type="text" name="weight" placeholder="7">
-            <label class="main-info__label program-form__input-label" for="age">Возраст (лет):</label>
-            <input class="main-info__input program-form__input" id="age" type="text" name="age" placeholder="7">
-          </fieldset>
-          <fieldset class="choose-program">
+          <legend class="visualy-hidden">Данные животного</legend>
+          <label class="main-info__label program-form__input-label" for="name">Имя:*</label>
+          <input class="main-info__input program-form__input" id="name" type="text" name="name" placeholder="Барсик">
+          <label class="main-info__label program-form__input-label" for="weight">Вес (кг)*</label>
+          <input class="main-info__input program-form__input" id="weight" type="text" name="weight" placeholder="7">
+          <label class="main-info__label program-form__input-label" for="age">Возраст (лет):</label>
+          <input class="main-info__input program-form__input" id="age" type="text" name="age" placeholder="7">
+        </fieldset>
+        <fieldset class="choose-program">
           <legend class="visualy-hidden">Выбор программы</legend>
           <ul class="choose-program__list">
             <li class="choose-program__item">
@@ -88,32 +88,34 @@
           </ul>
         </fieldset>
         <fieldset class="comments">
-          <legend class="program-form__title">коментарии
+          <legend class="program-form__title">Комментарии
           </legend>
           <textarea class="comments__area" name="comment" cols="100" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="additionally">
+          <legend class="additionally-form__title">Дополнительно
+          </legend>
           <ul class="additionally__list">
             <li class="additionally__item">
-              <label class="additionally__label" for="filter-sweetener">Сахарозаменитель</label>
               <input class="additionally__input" type="checkbox" name="sweetener" id="filter-sweetener" checked>
+              <label class="additionally__label" for="filter-sweetener">Сахарозаменитель</label>
             </li>
             <li class="additionally__item">
-              <label class="additionally__label" for="filter-drinking-water">Питьевая вода</label>
               <input class="additionally__input" type="checkbox" name="drinking-water" id="filter-drinking-water">
+              <label class="additionally__label" for="filter-drinking-water">Питьевая вода</label>
             </li>
             <li class="additionally__item">
-              <label class="additionally__label" for="filter-milk">Молоко</label>
               <input class="additionally__input" type="checkbox" name="milk" id="filter-milk">
+              <label class="additionally__label" for="filter-milk">Молоко</label>
             </li>
             <li class="additionally__item">
-              <label class="additionally__label" for="filter-vitamins">Витамины</label>
               <input class="additionally__input" type="checkbox" name="vitamins" id="filter-vitamins">
+              <label class="additionally__label" for="filter-vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
         <button type="submit" class="button">Отправить заявку</button>
-        <p><sup>*</sup> &mdash; Обязательные поля</p>
+        <p class="footnote"><sup>*</sup> &mdash; Обязательные поля</p>
       </form>
       <section class="cooperation">
         <p class="cooperation__invitation">Приглашение к сотрудничеству дилеров!</p>
