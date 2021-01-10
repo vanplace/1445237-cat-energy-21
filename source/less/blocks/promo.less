@@ -1,7 +1,7 @@
 .promo {
   //background: @main_green_transparent;
   background: linear-gradient(rgba(104, 183, 56, 0.85) 63%, @white 63%), url("../img/cat.png");
-  height: 302px;
+  height: 502px;
   width: 320px;
   background-repeat: no-repeat;
   position: relative;
@@ -9,13 +9,35 @@
   ::before {
     content: "";
     position: absolute;
-    top: 70px;
-    left: 130px;
+    top: 150px;
+    left: 10px;
     background: url("../img/glasswitheat.png");
     background-repeat: no-repeat;
     z-index: 2;
     height: 280px;
     width: 270px;
+
+    @media (min-width: @tablet-width) {
+      background: url("../img/glasswitheat.png");
+      height: 609px;
+      width: 768px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background: none;
+    background-color: @white;
+    height: 810px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 720px;
+    margin-left: 140px;
+    background: linear-gradient(rgba(104, 183, 56, 0.85) 63%, @white 63%), url("../img/cat-desktop.png");
+    background-repeat: no-repeat;
   }
 }
 
@@ -23,13 +45,22 @@
   // position: absolute;  - появляется дополнительная картинка от псевдокласса
   // объявление блоком и позиционирование временное для видимого порядка
   display: block;
-  margin-top: 180px;
-  width: 140px;
+  margin: 0 auto;
+  margin-top: 300px;
+  width: 220px;
   top: 220px;
   color: @white;
   padding: 7px 44px 7px 44px;
   background: @main_green;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: 83px;
+    margin-top: 50px;
+    width: 122px;
+    z-index: 4;
+  }
 }
 
 .promo__text {
@@ -37,6 +68,11 @@
   font-size: @font-size;
   line-height: @line-height;
   font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    color: @black_text;
+  }
 }
 
 .promo__header {
