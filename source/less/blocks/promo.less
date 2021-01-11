@@ -1,0 +1,53 @@
+.promo {
+  //background: @main_green_transparent;
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 63%, @white 63%), url("../img/cat.png");
+  height: 302px;
+  width: 320px;
+  background-repeat: no-repeat;
+  position: relative;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    background: url("../img/glasswitheat.png");
+    background-repeat: no-repeat;
+    z-index: 2;
+    height: 280px;
+    width: 270px;
+  }
+}
+
+.promo__program-search {
+  // position: absolute;  - появляется дополнительная картинка от псевдокласса
+  // объявление блоком и позиционирование временное для видимого порядка
+  display: block;
+  margin-top: 180px;
+  width: 140px;
+  top: 220px;
+  color: @white;
+  padding: 7px 44px 7px 44px;
+  background: @main_green;
+  text-decoration: none;
+}
+
+.promo__text {
+  color: @white;
+  font-size: @font-size;
+  line-height: @line-height;
+  font-weight: normal;
+}
+
+.promo__header {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
