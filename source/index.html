@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,12 +18,13 @@
           <a class="page-header__logo-text">
             <img src="img/logo-text-head.svg" width="101" height="18" alt="CATENERGY">
           </a>
-        </div>
+        <!--</div> перенес див после button чтобы разместить в флексе -->
           <!-- тут будет крестик для закрытия окна-->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden"> Открыть меню
           </span>
         </button>
+      </div> <!--перенесенный див-->
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>
@@ -106,7 +108,21 @@
           Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <fieldset class="example__promo">
+        <div class="example__wrap">
+          <div class="example__list">
+              <p class="example__span-upper">5 кг</P>
+              <p class="example__text">снижение веса</p>
+          </div>
+          <div class="example__list">
+            <p class="example__span-upper">60 Дней</P>
+            <p class="example__text">Затраченного времени</p>
+          </div>
+          <div class="example__block">
+            <p class="example__block-title">Затраты на питание:</P>
+            <span class="example__title-span">15 000 Руб.</span>
+          </div>
+        </div>
+        <!-- <fieldset class="example__promo">
             <legend>Снижение веса</legend>
             <p> 5 кг</p>
         </fieldset>
@@ -116,25 +132,37 @@
         </fieldset>
         <p class="example__epenses">
             Затраты на питание : 15 000 руб.
-        </p>
+        </p> -->
         <img class="example__before" src="img/cat-fat.png" width="311" height="232" alt="Кот до изменений">
-        <img class="example__after" src="img/cat-skinny.png" width="251" height="240" alt="Кот после изменений">
+        <!--<img class="example__after" src="img/cat-skinny.png" width="251" height="240" alt="Кот после изменений">  -->
         <p class="example__change example__change--before">Было
         </p>
         <p class="example__change example__change--after">Стало
         </p>
         <!-- тут должна быть переключалка "было/стало"-->
       </section>
-      <section class="cooperation">
+      <!--  перевел сотрудничество и карту в футер
+         <section class="cooperation">
         <p class="cooperation__invitation">Приглашение к сотрудничеству дилеров!</p>
         <address class="cooperation__adress">ул. Большая Конюшеннаяб д. 19/8 Санкт-Петербург</address>
       </section>
       <section class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1606290659375!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </section>
+      </section> -->
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <div class="page-footer__contact">
+        <div class="cooperation">
+          <p class="cooperation__invitation">Приглашение к сотрудничеству дилеров!</p>
+          <address class="cooperation__adress">ул. Большая Конюшеннаяб д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="map">
+          <iframe class="map__navigation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1606290659375!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <div class="page-footer__links">
+        <div class="page-footer__logo">
+      <a class="page-footer__logo-wrap">
         <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0)">
           <path d="M1.60253 22.0513C0.468358 20.3682 -0.0946573 18.3503 3.016e-05 16.3077V7.79487C-0.137317 5.73031 0.390444 3.67661 1.50238 1.94872C2.6041 0.615385 4.30676 0 6.81067 0C9.31458 0 10.9171 0.615385 11.9187 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.51333V6.46154C8.55297 5.76385 8.45065 5.06533 8.21286 4.41026C8.08576 4.14583 7.88431 3.9264 7.63443 3.78018C7.38455 3.63395 7.09766 3.56763 6.81067 3.58974C6.10958 3.58974 5.60879 3.79487 5.40848 4.30769C5.18191 5.03643 5.08025 5.79984 5.10801 6.5641V17.5385C5.05512 18.2799 5.19327 19.0227 5.50864 19.6923C5.70895 20.2051 6.20973 20.4103 6.91083 20.4103C7.61192 20.4103 8.01255 20.2051 8.21286 19.6923C8.44058 18.9992 8.54242 18.2692 8.51333 17.5385V15.0769H13.421V17.1282C13.5229 18.9651 12.9911 20.7803 11.9187 22.2564C10.9171 23.4872 9.21443 24.1026 6.81067 24.1026C4.40692 24 2.6041 23.3846 1.60253 22.0513Z" fill="#111111"/>
@@ -154,6 +182,7 @@
           </defs>
         </svg>
       </a>
+        </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -189,6 +218,7 @@
             <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
             </svg>
         </a>
+      </div>
       </div>
     </footer>
   </body>

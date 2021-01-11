@@ -21,6 +21,28 @@
 //styleguide
 @green_hover: #5eaa2f;
 @input_error: #FF8282;
-
+//viewports
+@tablet-width: 768px;
+@desktop-width: 1440px;
+@mobile-width-only: 767px;
+//
 @font-size: 14px;
 @line-height: 18px;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
