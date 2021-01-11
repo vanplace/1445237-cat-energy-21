@@ -2,7 +2,10 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -15,12 +18,13 @@
           <a class="page-header__logo-text">
             <img src="img/logo-text-head.svg" width="101" height="18" alt="CATENERGY">
           </a>
-        </div>
+
         <!-- тут будет крестик для закрытия окна-->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden"> Открыть меню
           </span>
         </button>
+      </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">
@@ -47,34 +51,44 @@
         </p>
       </section>
       <form class="program__form program-form" method="post" action="#">
-        <fieldset class="main-info">
-          <legend class="visualy-hidden">Данные животного</legend>
-          <label class="main-info__label program-form__input-label" for="name">Имя:*</label>
-          <input class="main-info__input program-form__input" id="name" type="text" name="name" placeholder="Барсик">
-          <label class="main-info__label program-form__input-label" for="weight">Вес (кг)*</label>
-          <input class="main-info__input program-form__input" id="weight" type="text" name="weight" placeholder="7">
-          <label class="main-info__label program-form__input-label" for="age">Возраст (лет):</label>
-          <input class="main-info__input program-form__input" id="age" type="text" name="age" placeholder="7">
-        </fieldset>
-        <fieldset class="choose-program">
-          <legend class="visualy-hidden">Выбор программы</legend>
-          <ul class="choose-program__list">
-            <li class="choose-program__item">
-              <input class="choose-program__input" type="radio" name="choose-program" value="losing-weight" id="filter-losing-weight" checked>
-              <label class="choose-program__label" for="filter-losing-weight">Похудение</label>
-            </li>
-            <li class="choose-program__item">
-              <input class="choose-program__input" type="radio" name="choose-program" value="set-of-weight" id="filter-set-of-weight" >
-              <label class="choose-program__label" for="filter-set-of-weight">Набор массы</label>
-            </li>
-            <li class="choose-program__item">
-              <input class="choose-program__input" type="radio" name="choose-program" value="need-advice" id="filter-need-advice">
-              <label class="choose-program__label" for="filter-need-advice">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="program-form__case">
+          <fieldset class="main-info">
+            <legend class="visually-hidden">Данные животного</legend>
+              <ul class="main-info__list">
+                <li class="main-info__item">
+                  <label class="main-info__label program-form__input-label" for="name">Имя:*</label>
+                  <input class="main-info__input program-form__input" id="name" type="text" name="name" placeholder="Барсик">
+                </li>
+                <li class="main-info__item">
+                  <label class="main-info__label program-form__input-label" for="weight">Вес (кг)*</label>
+                  <input class="main-info__input program-form__input" id="weight" type="text" name="weight" placeholder="7">
+                </li>
+                <li class="main-info__item">
+                  <label class="main-info__label program-form__input-label" for="age">Возраст (лет):</label>
+                  <input class="main-info__input program-form__input" id="age" type="text" name="age" placeholder="7">
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset class="choose-program">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="choose-program__list">
+              <li class="choose-program__item">
+                <input class="choose-program__input" type="radio" name="choose-program" value="losing-weight" id="filter-losing-weight" checked>
+                <label class="choose-program__label" for="filter-losing-weight">Похудение</label>
+              </li>
+              <li class="choose-program__item">
+                <input class="choose-program__input" type="radio" name="choose-program" value="set-of-weight" id="filter-set-of-weight" >
+                <label class="choose-program__label" for="filter-set-of-weight">Набор массы</label>
+              </li>
+              <li class="choose-program__item">
+                <input class="choose-program__input" type="radio" name="choose-program" value="need-advice" id="filter-need-advice">
+                <label class="choose-program__label" for="filter-need-advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="contact">
-          <legend class="program-form__title">Контактные данные(владельца кота)
+          <legend class="program-form__title">Контактные данные (владельца кота)
           </legend>
           <ul class=" contact__list">
             <li class="contact__item">
@@ -114,8 +128,10 @@
             </li>
           </ul>
         </fieldset>
+        <div class="program__submit">
         <button type="submit" class="button">Отправить заявку</button>
         <p class="footnote"><sup>*</sup> &mdash; Обязательные поля</p>
+        </div>
       </form>
       <!--<section class="cooperation">
         <p class="cooperation__invitation">Приглашение к сотрудничеству дилеров!</p>
