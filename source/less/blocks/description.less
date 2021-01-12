@@ -21,7 +21,8 @@
 .description__item--eat {
   display: block;
   height: 60px;
-  margin-left: 50px;
+  padding-left: 50px;
+  //margin-left: 50px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -32,24 +33,22 @@
   @media (min-width: @desktop-width) {
     margin-right: 0;
   }
-}
 
-.description__item--eat::before {
+&::before {
   content: "";
   position: absolute;
   background-image: url("../img/eat-group.svg");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  left: -70px;
+  left: -40px;
 
   @media (min-width: @desktop-width) {
     left: 0;
     top: 0;
   }
 }
-
-.description__item--eat::after {
+&::after {
   @media (min-width: @tablet-width) {
     content: "1";
     position: absolute;
@@ -68,53 +67,126 @@
     top: -40px;
   }
 }
+}
+
+//.description__item--eat::before {
+  //content: "";
+  //position: absolute;
+  //background-image: url("../img/eat-group.svg");
+  //background-repeat: no-repeat;
+  //width: 60px;
+  //height: 60px;
+  //left: -70px;
+
+  //@media (min-width: @desktop-width) {
+    //left: 0;
+    //top: 0;
+  //}
+//}
+
+//.description__item--eat::after {
+  //@media (min-width: @tablet-width) {
+    //content: "1";
+    //position: absolute;
+    //font-size: 280px;
+    //line-height: 280px;
+    //background-repeat: no-repeat;
+    //width: 60px;
+    //height: 60px;
+    //top: -20px;
+    //left: 100px;
+    //color: @gray;
+    //z-index: -1;
+  //}
+
+ //@media (min-width: @desktop-width) {
+    //top: -40px;
+  //}
+//}
 
 .description__item--powder {
   display: block;
   height: 60px;
-  margin-left: 50px;
+  padding-left: 50px;
+  //margin-left: 50px;
   position: relative;
-}
 
-.description__item--powder::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/powder-group.svg");
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  left: -70px;
-
-  @media (min-width: @desktop-width) {
-    left: 0;
-    top: 0;
-  }
-}
-
-.description__item--powder::after {
-  @media (min-width: @tablet-width) {
-    content: "2";
+  &::before {
+    content: "";
     position: absolute;
-    font-size: 280px;
-    line-height: 280px;
+    background-image: url("../img/powder-group.svg");
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
-    top: -20px;
-    left: 100px;
-    color: @gray;
-    z-index: -1;
+    left: -40px;
+
+    @media (min-width: @desktop-width) {
+      left: 0;
+      top: 0;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    top: -40px;
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "2";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      top: -20px;
+      left: 100px;
+      color: @gray;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -40px;
+    }
   }
 }
+
+//.description__item--powder::before {
+  //content: "";
+  //position: absolute;
+  //background-image: url("../img/powder-group.svg");
+  //background-repeat: no-repeat;
+  //width: 60px;
+  //height: 60px;
+  //left: -70px;
+
+  //@media (min-width: @desktop-width) {
+    //left: 0;
+    //top: 0;
+  //}
+//}
+
+//.description__item--powder::after {
+  //@media (min-width: @tablet-width) {
+    //content: "2";
+    //position: absolute;
+    //font-size: 280px;
+    //line-height: 280px;
+    //background-repeat: no-repeat;
+    //width: 60px;
+    //height: 60px;
+    //top: -20px;
+    //left: 100px;
+    //color: @gray;
+    //z-index: -1;
+  //}
+
+  //@media (min-width: @desktop-width) {
+    //top: -40px;
+  //}
+//}
 
 .description__item--food {
   display: block;
   height: 60px;
-  margin-left: 50px;
+  padding-left: 50px;
+  //margin-left: 50px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -125,84 +197,155 @@
   @media (min-width: @desktop-width) {
     margin-right: 0;
   }
-}
 
-.description__item--food::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/fork-knife-eat-group.svg");
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  left: -70px;
-
-  @media (min-width: @desktop-width) {
-    left: 0;
-    top: 0;
-  }
-}
-
-.description__item--food::after {
-  @media (min-width: @tablet-width) {
-    content: "3";
+  &::before {
+    content: "";
     position: absolute;
-    font-size: 280px;
-    line-height: 280px;
+    background-image: url("../img/fork-knife-eat-group.svg");
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
-    top: -20px;
-    left: 100px;
-    color: @gray;
-    z-index: -1;
+    left: -40px;
+
+    @media (min-width: @desktop-width) {
+      left: 0;
+      top: 0;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    top: -40px;
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "3";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      top: -20px;
+      left: 100px;
+      color: @gray;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -40px;
+    }
   }
 }
+
+//.description__item--food::before {
+  //content: "";
+  //position: absolute;
+  //background-image: url("../img/fork-knife-eat-group.svg");
+  //background-repeat: no-repeat;
+  //width: 60px;
+  //height: 60px;
+  //left: -70px;
+
+  //@media (min-width: @desktop-width) {
+    //left: 0;
+    //top: 0;
+  //}
+//}
+
+//.description__item--food::after {
+  //@media (min-width: @tablet-width) {
+    //content: "3";
+    //position: absolute;
+    //font-size: 280px;
+    //line-height: 280px;
+    //background-repeat: no-repeat;
+    //width: 60px;
+    //height: 60px;
+    //top: -20px;
+    //left: 100px;
+    //color: @gray;
+    //z-index: -1;
+  //}
+
+  //@media (min-width: @desktop-width) {
+    //top: -40px;
+  //}
+//}
 
 .description__item--time {
   display: block;
   height: 60px;
-  margin-left: 50px;
+  padding-left: 50px;
+  //margin-left: 50px;
   position: relative;
-}
 
-.description__item--time::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/time-group.svg");
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  left: -70px;
-
-  @media (min-width: @desktop-width) {
-    left: 0;
-    top: 0;
-  }
-}
-
-.description__item--time::after {
-  @media (min-width: @tablet-width) {
-    content: "4";
+  &::before {
+    content: "";
     position: absolute;
-    font-size: 280px;
-    line-height: 280px;
+    background-image: url("../img/time-group.svg");
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
-    top: -20px;
-    left: 100px;
-    color: @gray;
-    z-index: -1;
+    left: -40px;
+
+    @media (min-width: @desktop-width) {
+      left: 0;
+      top: 0;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    top: -40px;
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "4";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      top: -20px;
+      left: 100px;
+      color: @gray;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -40px;
+    }
   }
 }
+
+//.description__item--time::before {
+  //content: "";
+  //position: absolute;
+  //background-image: url("../img/time-group.svg");
+  //background-repeat: no-repeat;
+  //width: 60px;
+  //height: 60px;
+  //left: -70px;
+
+  //@media (min-width: @desktop-width) {
+    //left: 0;
+    //top: 0;
+  //}
+//}
+
+//.description__item--time::after {
+  //@media (min-width: @tablet-width) {
+    //content: "4";
+    //position: absolute;
+    //font-size: 280px;
+    //line-height: 280px;
+    //background-repeat: no-repeat;
+    //width: 60px;
+    //height: 60px;
+    //top: -20px;
+    //left: 100px;
+    //color: @gray;
+    //z-index: -1;
+  //}
+
+  //@media (min-width: @desktop-width) {
+    //top: -40px;
+  //}
+//}
 
 .description__list {
   list-style-type: none;
