@@ -1,4 +1,9 @@
+.description {
+  width: 280px;
+  margin: 0 auto;
+}
 .description__title {
+  margin-top: 25px;
   color: @black_text;
   font-size: 36px;
   line-height: 40px;
@@ -11,6 +16,7 @@
   line-height: 18px;
   color: @dark_gray_text;
   font-weight: normal;
+  margin-top: 20px;
 
   @media (min-width: @desktop-width) {
     display: block;
@@ -19,6 +25,7 @@
 }
 
 .description__item {
+
   @media (min-width: @tablet-width) {
     display: flex;
     width: 230px;
@@ -28,7 +35,7 @@
   &--eat {
     display: block;
     height: 60px;
-    padding-left: 50px;
+    padding-left: 80px;
     position: relative;
 
     @media (min-width: @tablet-width) {
@@ -47,7 +54,7 @@
       background-repeat: no-repeat;
       width: 60px;
       height: 60px;
-      left: -40px;
+      left: 0;
 
       @media (min-width: @desktop-width) {
         left: 0;
@@ -79,7 +86,7 @@
   &--powder {
     display: block;
     height: 60px;
-    padding-left: 50px;
+    padding-left: 80px;
     position: relative;
 
     &::before {
@@ -89,7 +96,7 @@
       background-repeat: no-repeat;
       width: 60px;
       height: 60px;
-      left: -40px;
+      left: 0;
 
       @media (min-width: @desktop-width) {
         left: 0;
@@ -121,7 +128,7 @@
   &--food {
     display: block;
     height: 60px;
-    padding-left: 50px;
+    padding-left: 80px;
     position: relative;
 
     @media (min-width: @tablet-width) {
@@ -140,7 +147,7 @@
       background-repeat: no-repeat;
       width: 60px;
       height: 60px;
-      left: -40px;
+      left: 0;
 
       @media (min-width: @desktop-width) {
         left: 0;
@@ -172,8 +179,7 @@
   &--time {
     display: block;
     height: 60px;
-    padding-left: 50px;
-    //margin-left: 50px;
+    padding-left: 80px;
     position: relative;
 
     &::before {
@@ -183,7 +189,7 @@
       background-repeat: no-repeat;
       width: 60px;
       height: 60px;
-      left: -40px;
+      left: 0;
 
       @media (min-width: @desktop-width) {
         left: 0;
@@ -215,6 +221,8 @@
 
 .description__list {
   list-style-type: none;
+  margin: 0 auto;
+  margin-top: 40px;
 
   @media (min-width: @tablet-width) {
     display: flex;

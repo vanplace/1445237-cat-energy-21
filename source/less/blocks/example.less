@@ -1,4 +1,10 @@
 .example {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 705px;
   background-color: @light_gray;
 
   @media (min-width: @tablet-width) {
@@ -11,6 +17,10 @@
 }
 
 .example__title {
+  margin: 0 auto;
+  width: 280px;
+  display: block;
+  margin-top: 28px;
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
@@ -21,6 +31,10 @@
 }
 
 .example__description {
+  margin: 0 auto;
+  width: 280px;
+  display: block;
+  margin-top: 32px;
   font-family: "Arial", sans-serif;
   color: @darked_gray;
   font-size: 14px;
@@ -48,21 +62,17 @@
 //  text-transform: uppercase;
 //}
 
-.example__change {
-  color: @black_text;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
+
 
 .example__wrap {
   width: 280px;
   margin: 0 auto;
+  margin-top: 25px;
   padding: 0 21px 0 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: -14px;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -95,7 +105,7 @@
   line-height: 12px;
   text-align: center;
   margin: 0;
-  margin-top: -35px;
+  margin-top: -11px;
   background-color: @light_gray;
 
   @media (min-width: @tablet-width) {
@@ -131,8 +141,4 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-.example__after {
-  background-image: none;
 }

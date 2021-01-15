@@ -2,6 +2,14 @@
   background-color: @gray;
 }
 
+.page-footer__cooperation-gray {
+  background-color: @gray;
+
+  @media (min-width: @desktop-width) {
+    background-color: @white;
+  }
+}
+
 .page-footer__cooperation {
   background-color: @white;
   display: flex;
@@ -10,6 +18,8 @@
   padding: 0;
   height: 114px;
   align-items: center;
+  background-color: @white;
+
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
@@ -24,13 +34,7 @@
   }
 }
 
-.page-footer__cooperation-gray {
-  background-color: @gray;
 
-  @media (min-width: @desktop-width) {
-    background-color: @white;
-  }
-}
 
 .page-footer__cooperation-invitation {
   color: @black;
@@ -38,6 +42,7 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0;
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 171px;
@@ -51,6 +56,7 @@
   line-height: 20px;
   font-weight: normal;
   font-style: normal;
+  margin-right: -15px;
 
   @media (min-width: @tablet-width) {
     width: 151px;
@@ -100,7 +106,48 @@
   display: flex;
   padding: 0;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 320px;
-  margin: 0 auto;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.copyright__link{
+  margin-left: 20px;
+}
+.copyright__logo-link{
+  margin-right: 20px;
+}
+
+.page-footer__logo {
+  margin:0;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.page-footer__social {
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  width: 280px;
+  border-top: 1px solid @gray_border_block;
+  border-bottom: 1px solid @gray_border_block;
+  height: 63px;
+}
+
+.social__list{
+  width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  &--vkontakte {
+    margin-right: 35px;
+  }
+  &--facebook {
+    margin-left: 35px;
+  }
 }
