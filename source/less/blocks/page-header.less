@@ -13,6 +13,12 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     height: 140px;
+    outline: 1px solid red;
+    //margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,13 +35,26 @@
   margin-top: 11px;
   border-bottom: 1px solid @gray_border_lighter;
 
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-left: 15px;
+    border: none;
+  }
+
 }
 
 .page-header__logo-img {
   margin-left: 20px;
+  @media (min-width: @tablet-width) {
+    margin:0;
+  }
 }
 
 .page-header__logo-text {
   margin-left: 55px;
   margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 24px;
+  }
 }
