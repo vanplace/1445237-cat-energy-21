@@ -1,0 +1,26 @@
+.page-content {
+  outline: 1px solid red;
+  outline-offset: -1px;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.page-content__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

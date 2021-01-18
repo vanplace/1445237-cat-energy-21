@@ -18,189 +18,198 @@
   }
 }
 
-.description__item--eat {
-  display: block;
-  height: 60px;
-  margin-left: 50px;
-  position: relative;
-
+.description__item {
   @media (min-width: @tablet-width) {
-    margin-right: 154px;
-    margin-bottom: 37px;
+    display: flex;
+    width: 230px;
+    height: 280px;
   }
 
-  @media (min-width: @desktop-width) {
-    margin-right: 0;
-  }
-}
-
-.description__item--eat::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/eat-group.svg");
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  left: -70px;
-
-  @media (min-width: @desktop-width) {
-    left: 0;
-    top: 0;
-  }
-}
-
-.description__item--eat::after {
-  @media (min-width: @tablet-width) {
-    content: "1";
-    position: absolute;
-    font-size: 280px;
-    line-height: 280px;
-    background-repeat: no-repeat;
-    width: 60px;
+  &--eat {
+    display: block;
     height: 60px;
-    top: -20px;
-    left: 100px;
-    color: @gray;
-    z-index: -1;
+    padding-left: 50px;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 154px;
+      margin-bottom: 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/eat-group.svg");
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      left: -40px;
+
+      @media (min-width: @desktop-width) {
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &::after {
+      @media (min-width: @tablet-width) {
+        content: "1";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        top: -20px;
+        left: 100px;
+        color: @gray;
+        z-index: -1;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: -40px;
+      }
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    top: -40px;
-  }
-}
-
-.description__item--powder {
-  display: block;
-  height: 60px;
-  margin-left: 50px;
-  position: relative;
-}
-
-.description__item--powder::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/powder-group.svg");
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  left: -70px;
-
-  @media (min-width: @desktop-width) {
-    left: 0;
-    top: 0;
-  }
-}
-
-.description__item--powder::after {
-  @media (min-width: @tablet-width) {
-    content: "2";
-    position: absolute;
-    font-size: 280px;
-    line-height: 280px;
-    background-repeat: no-repeat;
-    width: 60px;
+  &--powder {
+    display: block;
     height: 60px;
-    top: -20px;
-    left: 100px;
-    color: @gray;
-    z-index: -1;
+    padding-left: 50px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/powder-group.svg");
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      left: -40px;
+
+      @media (min-width: @desktop-width) {
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &::after {
+      @media (min-width: @tablet-width) {
+        content: "2";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        top: -20px;
+        left: 100px;
+        color: @gray;
+        z-index: -1;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: -40px;
+      }
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    top: -40px;
-  }
-}
-
-.description__item--food {
-  display: block;
-  height: 60px;
-  margin-left: 50px;
-  position: relative;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 154px;
-    margin-bottom: 37px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 0;
-  }
-}
-
-.description__item--food::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/fork-knife-eat-group.svg");
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  left: -70px;
-
-  @media (min-width: @desktop-width) {
-    left: 0;
-    top: 0;
-  }
-}
-
-.description__item--food::after {
-  @media (min-width: @tablet-width) {
-    content: "3";
-    position: absolute;
-    font-size: 280px;
-    line-height: 280px;
-    background-repeat: no-repeat;
-    width: 60px;
+  &--food {
+    display: block;
     height: 60px;
-    top: -20px;
-    left: 100px;
-    color: @gray;
-    z-index: -1;
+    padding-left: 50px;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 154px;
+      margin-bottom: 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/fork-knife-eat-group.svg");
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      left: -40px;
+
+      @media (min-width: @desktop-width) {
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &::after {
+      @media (min-width: @tablet-width) {
+        content: "3";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        top: -20px;
+        left: 100px;
+        color: @gray;
+        z-index: -1;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: -40px;
+      }
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    top: -40px;
-  }
-}
-
-.description__item--time {
-  display: block;
-  height: 60px;
-  margin-left: 50px;
-  position: relative;
-}
-
-.description__item--time::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/time-group.svg");
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  left: -70px;
-
-  @media (min-width: @desktop-width) {
-    left: 0;
-    top: 0;
-  }
-}
-
-.description__item--time::after {
-  @media (min-width: @tablet-width) {
-    content: "4";
-    position: absolute;
-    font-size: 280px;
-    line-height: 280px;
-    background-repeat: no-repeat;
-    width: 60px;
+  &--time {
+    display: block;
     height: 60px;
-    top: -20px;
-    left: 100px;
-    color: @gray;
-    z-index: -1;
-  }
+    padding-left: 50px;
+    //margin-left: 50px;
+    position: relative;
 
-  @media (min-width: @desktop-width) {
-    top: -40px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/time-group.svg");
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      left: -40px;
+
+      @media (min-width: @desktop-width) {
+        left: 0;
+        top: 0;
+      }
+    }
+
+    &::after {
+      @media (min-width: @tablet-width) {
+        content: "4";
+        position: absolute;
+        font-size: 280px;
+        line-height: 280px;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        top: -20px;
+        left: 100px;
+        color: @gray;
+        z-index: -1;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: -40px;
+      }
+    }
   }
 }
 
@@ -218,14 +227,6 @@
     flex-direction: row;
     margin: 0;
     justify-content: space-between;
-    height: 280px;
-  }
-}
-
-.description__item {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    width: 230px;
     height: 280px;
   }
 }
