@@ -11,7 +11,6 @@
 }
 
 .page-footer__cooperation {
-  background-color: @white;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -20,21 +19,20 @@
   align-items: center;
   background-color: @white;
 
-
   @media (min-width: @tablet-width) {
     justify-content: space-between;
+    height: 201px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     width: 570px;
     height: 201px;
-    top: 50px;
-    left: 50px;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
   }
 }
-
-
 
 .page-footer__cooperation-invitation {
   color: @black;
@@ -47,6 +45,14 @@
   @media (min-width: @tablet-width) {
     width: 171px;
     margin-left: 71px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 75px;
+    margin-top: 0;
   }
 }
 
@@ -59,8 +65,79 @@
   margin-right: -15px;
 
   @media (min-width: @tablet-width) {
-    width: 151px;
-    margin-right: 71px;
+    width: 159px;
+    height: 81px;
+
+    text-align: end;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    margin-right: 87px;
+  }
+}
+
+.page-footer__sup-adress {
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__sub-adress {
+  @media (min-width: @tablet-width) {
+    margin-top: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 53px;
+    background-image: url("../../img/map-pin-mobile.svg");
+    top: 139px;
+    left: 135px;
+    z-index: 2;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 113px;
+      height: 106px;
+      background-image: url("../../img/map-pin-table.svg");
+      top: 149px;
+      left: 333px;
+      z-index: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      top: 130px;
+      left: 908px;
+    }
   }
 }
 
@@ -87,9 +164,14 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -100,7 +182,18 @@
   justify-content: space-around;
   width: 125px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 160px;
+    margin-left: 30px;
+  }
 }
+
+//.social__list{
+//width: 280px;
+//display: flex;
+//justify-content: center;
+//}
 
 .copyright {
   display: flex;
@@ -111,20 +204,39 @@
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: start;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 205px;
+  }
 }
 
-.copyright__link{
+.copyright__link {
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 24px;
+  }
 
   &:active {
     opacity: 0.3;
-    }
+  }
 }
-.copyright__logo-link{
+
+.copyright__logo-link {
   margin-right: 20px;
 
+  @media (min-width: @tablet-width) {
+    margin-right: 30px;
+  }
+
   &:hover path {
-    fill:@main_green;
+    fill: @main_green;
   }
 
   &:active {
@@ -133,12 +245,22 @@
 }
 
 .page-footer__logo {
-  margin:0;
+  margin: 0;
   margin-top: 35px;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+  }
+
   &:hover {
     opacity: 0.5;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -148,21 +270,34 @@
   margin: 0;
   display: flex;
   align-items: center;
-
+  justify-content: center;
   width: 280px;
   border-top: 1px solid @gray_border_block;
   border-bottom: 1px solid @gray_border_block;
   height: 63px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 85px;
+  }
 }
 
-.social__list{
-  width: 280px;
-  display: flex;
-  justify-content: center;
-}
-.social__link{
-  &:hover path {
-    fill:@main_green;
+//.social__link {
+//&:hover path {
+//fill: @main_green;
+//}
+
+//&:active {
+//opacity: 0.3;
+//}
+//}
+
+.social__linkf {
+  :hover path {
+    stroke: @main_green;
   }
 
   &:active {
@@ -170,21 +305,40 @@
   }
 }
 
-.social__linkf{
-  :hover path {
-    stroke: @main_green;
+.social__link {
+  &:hover path {
+    fill: @main_green;
   }
 
-    &:active {
-      opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vkontakte svg {
+    margin-right: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      //margin-left: 15px;
+      width: 29px;
+      height: 17px;
     }
   }
 
-.social__link {
-  &--vkontakte {
-    margin-right: 35px;
+  &--instagram svg {
+    @media (min-width: @tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
   }
-  &--facebook {
+
+  &--facebook svg {
     margin-left: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      width: 33px;
+      height: 30px;
+    }
   }
 }

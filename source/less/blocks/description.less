@@ -1,13 +1,40 @@
 .description {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
+
 .description__title {
   margin-top: 25px;
   color: @black_text;
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 69px;
+  }
+}
+
+.description__item-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .description__text {
@@ -18,6 +45,11 @@
   font-weight: normal;
   margin-top: 20px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   @media (min-width: @desktop-width) {
     display: block;
     margin-top: 153px;
@@ -25,11 +57,14 @@
 }
 
 .description__item {
-
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 230px;
+    width: 245px;
     height: 280px;
+
+    @media (min-width: @desktop-width) {
+      width: 245px;
+    }
   }
 
   &--eat {
@@ -39,8 +74,9 @@
     position: relative;
 
     @media (min-width: @tablet-width) {
-      margin-right: 154px;
+      margin-right: 75px;
       margin-bottom: 37px;
+      padding: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -56,9 +92,17 @@
       height: 60px;
       left: 0;
 
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/eat-group-tablet.svg");
+        width: 80px;
+        height: 80px;
+        left: 0;
+        top: -95px;
+      }
+
       @media (min-width: @desktop-width) {
         left: 0;
-        top: 0;
+        top: 40px;
       }
     }
 
@@ -71,14 +115,14 @@
         background-repeat: no-repeat;
         width: 60px;
         height: 60px;
-        top: -20px;
-        left: 100px;
+        top: -133px;
+        left: 120px;
         color: @gray;
         z-index: -1;
       }
 
       @media (min-width: @desktop-width) {
-        top: -40px;
+        top: 0;
       }
     }
   }
@@ -89,6 +133,14 @@
     padding-left: 80px;
     position: relative;
 
+    @media (min-width: @tablet-width) {
+      padding-left: 63px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -98,9 +150,17 @@
       height: 60px;
       left: 0;
 
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/powder-group-tablet.svg");
+        width: 80px;
+        height: 80px;
+        top: -93px;
+        left: 65px;
+      }
+
       @media (min-width: @desktop-width) {
         left: 0;
-        top: 0;
+        top: 40px;
       }
     }
 
@@ -113,14 +173,15 @@
         background-repeat: no-repeat;
         width: 60px;
         height: 60px;
-        top: -20px;
-        left: 100px;
+        top: -134px;
+        left: 176px;
         color: @gray;
         z-index: -1;
       }
 
       @media (min-width: @desktop-width) {
-        top: -40px;
+        left: 113px;
+        top: 0;
       }
     }
   }
@@ -132,12 +193,14 @@
     position: relative;
 
     @media (min-width: @tablet-width) {
-      margin-right: 154px;
-      margin-bottom: 37px;
+      margin-right: 75px;
+      margin-bottom: 20px;
+      margin-top: 220px;
+      padding: 0;
     }
 
     @media (min-width: @desktop-width) {
-      margin-right: 0;
+      margin: 0;
     }
 
     &::before {
@@ -149,9 +212,17 @@
       height: 60px;
       left: 0;
 
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/fork-knife-eat-group-table.svg");
+        width: 80px;
+        height: 80px;
+        left: 0;
+        top: -93px;
+      }
+
       @media (min-width: @desktop-width) {
         left: 0;
-        top: 0;
+        top: 40px;
       }
     }
 
@@ -164,14 +235,14 @@
         background-repeat: no-repeat;
         width: 60px;
         height: 60px;
-        top: -20px;
-        left: 100px;
+        top: -130px;
+        left: 115px;
         color: @gray;
         z-index: -1;
       }
 
       @media (min-width: @desktop-width) {
-        top: -40px;
+        top: 0;
       }
     }
   }
@@ -182,6 +253,16 @@
     padding-left: 80px;
     position: relative;
 
+    @media (min-width: @tablet-width) {
+      padding-left: 63px;
+      margin-top: 220px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+      padding: 0;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -191,9 +272,17 @@
       height: 60px;
       left: 0;
 
+      @media (min-width: @tablet-width) {
+        background-image: url("../img/time-group-tablet.svg");
+        width: 80px;
+        height: 80px;
+        top: -93px;
+        left: 65px;
+      }
+
       @media (min-width: @desktop-width) {
         left: 0;
-        top: 0;
+        top: 40px;
       }
     }
 
@@ -206,14 +295,15 @@
         background-repeat: no-repeat;
         width: 60px;
         height: 60px;
-        top: -20px;
-        left: 100px;
+        top: -132px;
+        left: 176px;
         color: @gray;
         z-index: -1;
       }
 
       @media (min-width: @desktop-width) {
-        top: -40px;
+        left: 113px;
+        top: 0;
       }
     }
   }
@@ -228,12 +318,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 165px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
     margin: 0;
+    margin-top: 33px;
     justify-content: space-between;
     height: 280px;
   }
