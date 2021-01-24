@@ -1,4 +1,5 @@
 .catalog__list {
+  margin-top: 40px;
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -9,6 +10,14 @@
 .catalog__item {
   list-style-type: none;
   border-top: 1px solid @gray_border;
+  display: flex;
+  flex-wrap: wrap;
+
+ //height: 20px;
+  width:280px;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     background-color: @gray;
@@ -26,12 +35,39 @@
   }
 }
 
+.catalog__item:last-child {
+  border-bottom: 1px solid @gray_border;
+}
+
+.product__img-wrap {
+  //width: 68px;
+  //height: auto;
+  //margin-top: 48px;
+  //margin-left: 56px;
+  width: 141px;
+  height: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.product__img {
+
+
+}
+
+.catalog__wrap {
+ // margin-left: 37px;
+  margin-top: 3px;
+}
 .product__title {
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   color: @gray_dark_text_catalog;
   text-transform: uppercase;
+  width:80px;
 }
 
 .product-table {
@@ -40,6 +76,14 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: normal;
+  list-style-type: none;
+  margin-top: 14px;
+}
+
+.product-table__row {
+  display: flex;
+  width: 138px;
+  justify-content: space-between;
 }
 
 .button {
@@ -50,6 +94,12 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+//  margin-left: 20px;
+ margin-top: 12px;
+  padding-left: 110px;
+  padding-right: 109px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &--more {
     color: @darked_gray;
@@ -63,6 +113,9 @@
 .product__more {
   list-style-type: none;
   border-top: 1px solid @gray_border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     border: 2px solid @gray;
@@ -92,7 +145,23 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../../img/plus.svg");
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+
+  }
 }
+
 
 .product__more-text {
   font-family: "Arial", sans-serif;
