@@ -1,16 +1,67 @@
+.additional {
+  border-top: 1px solid @gray_border;
+  margin-top: 23px;
+  padding-top: 26px;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+  margin-top: 36px;
+  }
+}
+
 .additional__heading {
   color: @black_text;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
+ margin-left: 20px;
+ position: relative;
+
+
+ &::before {
+   content: "";
+   position: absolute;
+   width: 52px;
+   height: 2px;
+   background-color: @main_green;
+   top: 15px;
+   left: 247px;
+ }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-left: 37px;
+
+    &::before {
+      width: 326px;
+      height: 2px;
+      top: 22px;
+      left: 374px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 29px;
+      height: 2px;
+      background-color: @main_green;
+      top: 22px;
+      left: -66px;
+    }
   }
 }
 
 .additional__wrap {
+  width: 280px;
+  margin-top: 35px;
+  margin-left: 20px;
+  //padding-top: 13px;
+  @media (min-width: @tablet-width) {
+    margin:0;
+    margin-top: 80px;
+    width: 708px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
@@ -36,18 +87,22 @@
 }
 
 .additional__item {
+  height: 115px;
   list-style-type: none;
-  border-top: 1px solid @gray_border;
+  border-top: 1px solid @dark_gray;
+  padding-top: 13px;
+
 
   @media (min-width: @tablet-width) {
     border: 1px solid @gray_border;
     width: 707px;
-    height: 55px;
-    //margin-bottom: 17px;
+    height: auto;
+    padding-top: 8px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
@@ -64,6 +119,14 @@
   line-height: 16px;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  line-height: 20px;
+  margin-left: 37px;
+  margin-top: 19px;
+  }
+
 }
 
 .additional__table {
@@ -72,6 +135,26 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 225px;
+    justify-content: flex-end;
+}
+}
+.additional__table-item{
+  @media (min-width: @tablet-width) {
+    //margin-left: 1px;
+  &--right{
+    margin-left: 49px;
+  }
+}
 }
 
 .additional__button {
@@ -82,6 +165,13 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+  display: block;
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+   //width: 350px;
+    margin-top: 23px;
+  }
 }
 
 .additional__buy-all {
@@ -91,9 +181,11 @@
   width: 280px;
   height: 289px;
   text-decoration: none;
+  margin-top: 40px;;
   margin-bottom: 29px;
 
   @media (min-width: @tablet-width) {
+    background-image: url("../../img/gift-photo-tablet.png");
     width: 708px;
     height: 200px;
     margin-top: 69px;
@@ -113,4 +205,25 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  padding-top: 187px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  padding-left: 422px;
+  padding-right: 122px;
+  padding-top: 72px;
+  }
 }
