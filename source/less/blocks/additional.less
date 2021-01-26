@@ -222,13 +222,18 @@
 
 .additional__buy-all {
   display: block;
-  background-image: url("../../img/gift-photo-mobile1.png");
+  background-image: url("../../img/gift-photo-mobile.png");
   background-color: @main_green;
   width: 280px;
   height: 289px;
   text-decoration: none;
   margin-top: 40px;;
   margin-bottom: 29px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/gift-photo-mobile@2x.png");
+    background-size: contain;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/gift-photo-tablet.png");
@@ -237,6 +242,11 @@
     margin-top: 69px;
     margin-bottom: 79px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift-photo-tablet@2x.png");
+      background-size: contain;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -245,6 +255,11 @@
     height: 289px;
     margin-left: 20px;
     margin-top: 76px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift-photo-desktop@2x.png");
+      background-size: contain;
+    }
   }
 }
 
