@@ -6,6 +6,12 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+  margin-top: 12px;
+  padding-left: 110px;
+  padding-right: 109px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
 
   &--more {
     color: @darked_gray;
@@ -13,5 +19,46 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: normal;
+    padding-left: 94px;
+    padding-right: 94px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 91px;
+    padding-right: 96px;
+    margin: 0;
+    margin-bottom: 38px;
+
+    &--more {
+      margin-top: 85px;
+      margin-left: 7px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    &--additional {
+      padding-left: 285px;
+      padding-right: 285px;
+      margin: 0 auto;
+      margin-top: 26px;
+      margin-bottom: 23px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 53px;
+    padding-right: 53px;
+
+    &--more {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &--additional {
+      margin: 0;
+      padding-left: 90px;
+      padding-right: 92px;
+    }
   }
 }

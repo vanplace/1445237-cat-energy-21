@@ -1,3 +1,50 @@
 .social__list {
   list-style-type: none;
 }
+
+.social__linkf {
+  :hover path {
+    stroke: @main_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link {
+  &:hover path {
+    fill: @main_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vkontakte svg {
+    margin-right: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      width: 29px;
+      height: 17px;
+    }
+  }
+
+  &--instagram svg {
+    @media (min-width: @tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook svg {
+    margin-left: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      width: 33px;
+      height: 30px;
+    }
+  }
+}
